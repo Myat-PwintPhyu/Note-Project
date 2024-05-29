@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.focus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: bold;
+    
+    color: rgb(195, 132, 49);;
+}
+
+p{
+    font-size: 20px;
+    
+    font-weight: bold;
+    color: rgb(195, 132, 49);;
+}
+
+button{
+    width: 100px;
+    background-color: rgb(237, 201, 147);
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  
+}
+
+button:hover{
+    background-color: rgb(234, 168, 81);
+    
+}
+
+a:hover{
+    color: white;
+}
+
+.login{
+background-color: gray;
+
+}
+
+.login:hover{
+    background-color: rgb(62, 62, 62);
+}
+
+.error-message{
+    color: black;
+    background-color: rgb(203, 104, 104);
+    width: 400px;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 7px;
+    border: 2px solid burlywood;
+
+}
+
+.focus{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@media screen  and (min-width:320px){
+   h1{
+    font-size: 20px;
+   }
+   p{
+    font-size: 13px;
+   }
+   button{
+    width: 70px;
+   }
+  }
+ 
+  
+@media screen and (min-width:768px) {
+  
+    h1{
+        font-size: 50px;
+       }
+       p{
+        font-size: 20px;
+       }
+       button{
+        width: 100px;
+       }
+  
+}

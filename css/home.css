@@ -1,0 +1,212 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    
+}
+.nav{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:antiquewhite;
+    padding: 10px 80px;
+    margin-bottom: 20px;
+}
+
+.menuTitle{
+  color: rgb(184, 137, 75);
+ }
+.logo{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    color: rgb(121, 85, 39);
+  }
+
+  .menuOffcanvas{
+    width: 50%;
+    height: 97%;
+    background-color:bisque;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    display: none;
+  }
+  
+
+  
+
+  .menuHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+  form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 80vh;
+    padding: 10px;
+}
+
+  .formHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    
+  }
+
+  .formBody{
+    display: flex;
+    justify-content: center;
+  }
+
+  input{
+    width: 100%;
+    font-size: 25px;
+    padding: 0 10px;
+    height: 50px;
+    font-weight: bold;
+    border-radius: 6px;
+    border: 2px solid rgb(220, 159, 85);
+   
+    color: rgb(171, 138, 94);
+  }
+  input:focus{
+    outline: none;
+    border-color: rgb(244, 156, 23);
+  }
+
+  
+button{
+  width: 100px;
+  border-radius: 7px;
+  background-color: rgb(237, 201, 147);
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+  
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: rgb(234, 168, 81);
+  color: white;
+}
+
+  
+
+  textarea{
+    height: 60vh;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 6px;
+    border: 2px solid;
+    border-color: burlywood;
+    color: rgb(171, 138, 94);
+
+}
+textarea:hover{
+  outline: none;
+  border-color: rgb(247, 156, 46);
+  
+}
+
+a{
+  text-decoration: none;
+  color: rgb(121, 85, 39);
+}
+
+.aa{
+  font-size: 23px;
+}
+
+  @media screen  and (min-width:320px){
+    .nav{
+        padding: 10px;
+    }
+
+   ul{
+    display: none;
+   }
+   .navToggle {
+    font-size: 35px;
+   }
+   textarea{
+    width: 100%;
+    height:40vh ;
+   }
+
+   .menuTitle{
+    font-size: 20px;
+   }
+
+   a{
+    font-size: 15px;
+   }
+   
+   
+   .menuClose{
+    font-size: 10px;
+   }
+   input{
+    font-size: 20px;
+   }
+   button{
+    width: 80px;
+    font-size: 15px;
+    padding: 8px;
+   }
+
+  }
+
+  @media screen and (min-width:768px) {
+    input{
+      font-size: 25px;
+     }
+     button{
+      width: 100px;
+      font-size: 20px;
+      padding: 10px;
+     }
+     .menuTitle{
+      font-size: 30px;
+     }
+    a{
+      font-size: 25px;
+    
+  }
+  .menuClose{
+    font-size: 25px;
+   }
+   
+  }
+ 
+  
+@media screen and (min-width:1024px) {
+  
+ ul{
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+
+
+  .navToggle{
+    display: none;
+  }
+  textarea{
+    width: 100%;
+  }
+  
+}
+ 
+
+  
